@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,41 @@
     <title>Bus Travel Widget</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Bus Travel Widget</h1>
-    <h3>Points:</h3>
-    <input type="text" id="points" placeholder="Enter points">
-    <h3>Start location:</h3>
-    <select name="" id="">
-        <option value="">Select start location</option>
-        <option value="">Khayelitsha</option>
-        <option value="">Dunoon</option>
-        <option value="">Mitchell's Plain</option>
-    </select>
-    <h3>Travel Times:</h3>
-    <label for="">Peak</label>
-    <input type="radio" name="times" id="">
-    <label for="">Off-Peak</label>
-    <input type="radio" name="times" id="">
-    <label for="">Return</label>
-    <input type="checkbox" name="" id="">
-    <button>Calculate</button>
 
-    <h2>Calculations</h2>
-    <h3>Number of single trips:</h3>
-    <span id="numSingleTrips"></span>
-    <h3>Price per trip (single):</h3>
-    <span id="pricePerSingle"></span>
-    <h3>Number of Return Trips:</h3>
-    <span id="numReturnTrips"></span>
-    <h3>Price per trip (return):</h3>
-    <span id="pricePerReturn"></span>
+<body>
+    <div class="container">
+        <h1>Bus Travel Widget</h1>
+        <div id="pointsSection">
+            <label>Points:</label>
+            <input type="text" id="points" placeholder="Enter points">
+        </div>
+        <div>
+            <label>Start location:</label>
+            <select name="" id="location">
+                <option value="">Select start location</option>
+                <option value="Khayelitsha">Khayelitsha</option>
+                <option value="Dunoon">Dunoon</option>
+                <option value="Mitchell's Plain">Mitchell's Plain</option>
+            </select>
+        </div>
+        <h3>Travel Times:</h3>
+        <label for="">Peak</label>
+        <input type="radio" name="times" id="" value="peak">
+        <label for="" id="offPeakLabel">Off-Peak</label>
+        <input type="radio" name="times" id="" value="off-peak">
+        <label for="" id="returnLabel">Return</label>
+        <input type="checkbox" name="" id="returnTrip">
+        <button id="calculateBtn">Calculate</button>
+
+        <h2>Calculations</h2>
+        <h3>Number of single trips: <span id="numSingleTrips"></span></h3>
+        <h3>Price per trip (single): <span id="pricePerSingle"></span></h3>
+        <h3>Number of Return Trips: <span id="numReturnTrips"></span></h3>
+        <h3>Price per trip (return): <span id="pricePerReturn"></span></h3>
+        
+    </div>
+    <script src="bus-travel.js"></script>
+    <script src="bus-travel.dom.js"></script>
 </body>
+
 </html>

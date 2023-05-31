@@ -1,0 +1,28 @@
+.container {
+    margin: 0 auto;
+    width: 40%;
+    background-color: #9c8bd1;
+    border: 1px solid black;
+    border-radius: 7px;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#calculateBtn {
+    display: block;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#offPeakLabel, #returnLabel {
+    margin-left: 10px;
+}
+
+#pointsSection {
+    margin-bottom: 12px;
+}
